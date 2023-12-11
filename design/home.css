@@ -1,0 +1,136 @@
+* {
+    /* Change your font family */
+    font-family: poppins;
+}
+body{
+    background-color: #f4f5f8;
+}
+
+
+.content-table {
+    border-collapse: collapse;
+    margin: 100px 210px;
+    position: relative;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.btntambah{
+    padding: 7px 10px;
+    background-color: #009879;
+    color: #fff;
+    position: relative;
+    top:80px;
+    border: none;
+    margin-left: 210px;
+    border-radius: 6px;
+}
+.texttambah{
+    color:#fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+.btnedit{
+    width: 70px;
+    font-size: 15px;
+    background-color: #009879;
+    border-radius: 6px;
+    border: 1px solid #009879;
+    color: #fff;
+}
+
+.btnhapus{
+    width: 70px;
+    font-size: 15px;
+    height:35px;
+    border-radius: 6px;
+    color:#fff;
+    font-family: poppins;
+    background-color: red;
+    border: 1px solid red;
+}
+
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.content-table tbody tr:nth-child(2) {
+    background-color: #f3f3f3; /* Ganti warna latar belakang sesuai keinginan Anda */
+}
+
+td,th{
+    text-align: center;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+body.dark {
+    background-color: #030205;
+  }
+  
+  .radio-btn {
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+    background-color: #27173a;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .radio-btn .radio-inner {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #ffc207;
+    border-radius: 50%;
+    transition: all 0.6s;
+  }
+  
+  .radio-btn .radio-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 100%;
+    height: 100%;
+    background-color: #27173a;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.6s;
+  }
+  
+  .radio-btn .radio-inner.active {
+    transform: translateX(calc(150px - 80px));
+  }
+  
+  .radio-btn .radio-inner.active::before {
+    left: -25px;
+    transform: scale(1);
+  }
